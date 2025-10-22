@@ -19,5 +19,14 @@ def dados_usuario():
     dados_usu = {"nome": "Sofia", "ocupacao": "Estudante", "disciplina":"Desenvolvimento Web III"}
     return render_template("usuario.html", dados = dados_usu)
 
+@app_Sofia.route('/usuario/<id>')
+def saudacao(id):
+    return render_template('homepage_nome.html', nome=id)
+
+@app_Sofia.route("/usuario/<nome_usuario>/<nome_ocupacao>/<nome_disciplina>") 
+def usuario (nome_usuario, nome_ocupacao, nome_disciplina):  
+    dados_usu = {"ocupacao": nome_ocupacao, "disciplina": nome_disciplina}
+    return render_template ("usuario.html", nome=nome_usuario, dados = dados_usu)  
+
 if __name__ == "__main__": 
     app_Sofia.run(port = 8000) 
