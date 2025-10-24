@@ -4,7 +4,7 @@ app_Sofia = Flask(__name__ , template_folder='templates')
 
 @app_Sofia.route("/")
 def homepage():          
-    return render_template ("homepage.html")
+    return render_template ("homepage.html", nome = "Sofia")
 
 @app_Sofia.route("/contato")
 def contato():
@@ -21,7 +21,7 @@ def dados_usuario():
 
 @app_Sofia.route('/usuario/<id>')
 def saudacao(id):
-    return render_template('homepage_nome.html', nome=id)
+    return render_template('homepage.html', nome=id)
 
 @app_Sofia.route("/usuario/<nome_usuario>/<nome_ocupacao>/<nome_disciplina>") 
 def usuario (nome_usuario, nome_ocupacao, nome_disciplina):  
