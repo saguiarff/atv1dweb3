@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from flask import request  
 
 app_Sofia = Flask(__name__, template_folder='templates') 
 
@@ -19,6 +20,12 @@ def login():
 def usuarios (nome_usuario, nome_profissao):
     dados_usu = {"profissao": nome_profissao, "disciplina":"Desenvolvimento Web III"}
     return render_template ("usuario.html", nome=nome_usuario, dados = dados_usu)  
+
+@app_Sofia.route("/autenticar", methods=['GET'] ) 
+def autenticar():
+    usuario = request.args.get('nome_usuario')
+    senha = request.args.get('senha')
+    return f"usuario: {usuario} e senha: {senha}"
 
 if __name__ == "__main__": 
     app_Sofia.run(port = 8000) 
