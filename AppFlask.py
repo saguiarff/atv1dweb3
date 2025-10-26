@@ -21,10 +21,10 @@ def usuarios (nome_usuario, nome_profissao):
     dados_usu = {"profissao": nome_profissao, "disciplina":"Desenvolvimento Web III"}
     return render_template ("usuario.html", nome=nome_usuario, dados = dados_usu)  
 
-@app_Sofia.route("/autenticar", methods=['GET'] ) 
+@app_Sofia.route("/autenticar", methods=['POST'] ) 
 def autenticar():
-    usuario = request.args.get('nome_usuario')
-    senha = request.args.get('senha')
+    usuario = request.form.get('nome_usuario')
+    senha = request.form.get('senha')
     return f"usuario: {usuario} e senha: {senha}"
 
 if __name__ == "__main__": 
