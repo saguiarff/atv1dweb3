@@ -11,14 +11,25 @@ Branch:
 <li>2ªparte</li>
 
 ### Página de Login
-- Campo de senha oculto (tipo `password`).  
+- Campo de senha oculto (tipo `password`); 
 - Validação de senha via **JavaScript** antes de enviar:  
-  - Mínimo de 6 caracteres.  
+  - Mínimo de 6 caracteres;
   - Pelo menos uma letra maiúscula, um número e um caractere especial.  
-- Link “Cadastrar” direciona para o cadastro de novo usuário.  
+- Link “Cadastrar” direciona para o cadastro de novo usuário;  
 - Alertas em caso de erro na senha.
 
 ### Página de Cadastro
-- Campos obrigatórios: Nome completo, CPF, E-mail, Telefone, Endereço, Senha e Confirmação de senha.  
-- Validação de senha e confirmação: alertas via `alert()` se não coincidirem.  
+- Campos obrigatórios: Nome completo, CPF, E-mail, Telefone, Endereço, Senha e Confirmação de senha;
+- Validação de senha e confirmação: alertas via `alert()` se não coincidirem;
 - Reaproveita a validação de senha do login.
+
+### Estilo (CSS)
+- Tema escuro com cores preto, roxo e laranja.  
+(inspirado no halloween)
+
+### Imagens
+- Imagem temática na rota de login;
+- Imagem temática na rota de cadastro (a mesma imagem da login invertida e com alteração no texto);
+- Imagens temática na rota index, com alerta ao clicar e troca de imagem.
+
+<li>As artes das rotas login, cadastro e index foram criadas por mim no [Pixilart](https://www.pixilart.com/).</li>
