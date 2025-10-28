@@ -1,7 +1,23 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% block title %}Página Inicial{% endblock %}
 
 {% block conteudo %}
+<div class="fantasma-container" style="text-align:center; margin-top:50px;">
+    <img id="fantasma" src="{{ url_for('static', filename='img/fantasma.png') }}" 
+        alt="Fantasma" style="width:300px; cursor:pointer;">
+</div>
 
+<script>
+let clickCount = 0;
 
+const fantasma = document.getElementById("fantasma");
 
-{% endblock %}  
+fantasma.addEventListener("click", () => {
+    clickCount++;
+    if (clickCount === 2) {
+        alert("Por que você fez isso?");
+        fantasma.src = "{{ url_for('static', filename='img/fantasmachoro.png') }}";
+    }
+});
+</script>
+{% endblock %}
