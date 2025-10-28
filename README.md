@@ -11,4 +11,5 @@ Obs.: No commit <b>03</b> do <code>AppFlask.py</code> eu coloquei que foi criado
 <h3>2ª Parte</h3>
 Branch:
 <li>2ªparte</li>
-(as descrições específicas sobre a 2ª parte estarão lá, assim como as outras branches)
+<li>2ªparte</li>
+(as descrições específicas sobre a 2ª parte estão nessa branch)
