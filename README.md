@@ -9,12 +9,7 @@ Branches:
 Obs.: No commit <b>03</b> do <code>AppFlask.py</code> eu coloquei que foi criado o objeto da aplicação Flask <code>app_Sofia = Flask(__nome_'_)</code>, mas sei que foi criado desde o commit <b>01</b>, acho o fato de isso ser o objeto da aplicação está em um comentário no código original sem querer acabou me confundindo, estava cansada, realmente foi erro meu, não foi chatgpt ou algo assim.
 - **Imagem utilizada <code>estudante.jpg</code>:** Criada por [pch.vector](https://www.freepik.com/author/pch-vector) no [Freepik](https://www.freepik.com).
 
-<h4>Principais diferenças entre as duas branches:</h4>
-<ul>
-  <li>
-</ul>
-
 <h3>2ª Parte</h3>
 Branch:
 <li>2ªparte</li>
-(as descrições específicas sobre a 2ª parte estarão lá)
+(as descrições específicas sobre a 2ª parte estão nessa branch)
