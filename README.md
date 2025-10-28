@@ -24,12 +24,12 @@ Branch:
 - Reaproveita a validação de senha do login.
 
 ### Estilo (CSS)
-- Tema escuro com cores preto, roxo e laranja.  
+- Tema escuro com cores preto, roxo e laranja.  <br>
 (inspirado no halloween)
 
 ### Imagens
 - Imagem temática na rota de login;
 - Imagem temática na rota de cadastro (a mesma imagem da login invertida e com alteração no texto);
-- Imagens temática na rota index, com alerta ao clicar e troca de imagem.
-
+- Imagens temática na rota index, com alerta ao clicar e troca de imagem. <br>
+(também inspiradas no halloween)<br>
 <li>As artes das rotas login, cadastro e index foram criadas por mim no [Pixilart](https://www.pixilart.com/).</li>
