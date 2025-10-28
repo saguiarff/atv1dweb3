@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <title>Perfil do Usuário</title>
-    <link rel = "stylesheet" href="{{ url_for('static', filename = 'css/estilo.css')}}">
-    
-    {% block scripts %} {% endblock %}
+    <meta charset="utf-8" />
+    <title>{% block title %}Oi{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    {% block head %}{% endblock %}
   </head>
 
   <body>
-
-    <div>
-    <!--Informação fixa nas páginas coloca neste template -->
-    <img src="https://portal.ifro.edu.br/images/botoes_do_site/menu-de-relevancia/logotipo-IFRO-portal-principal.png" alt="logo IFRO" width = 70 height = 70>
-    <br>
-    <!--    -->
-    <p style="font-size: 1.0em;"  id="dataHora"></p>
-
-    </div>
-
-    <nav> 
-        <a href="/index">Página Inicial</a>
+    <nav>
+      <a href="/index">Início</a>
+      <a href="/contato">Contato</a>
+      {% if usuario %}
         <a href="/contato">Contato</a>
-        <a href="/usuario">Perfil do Usuário</a>
-        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+      {% endif %}
     </nav>
 
-    <!--Informação que muda nas páginas coloca como extensão -->
-    {% block conteudo %}    
+    {% set mensagens = get_flashed_messages() %}
+    {% if mensagens %}
+      <div class="mensagens-flash">
+        {% for msg in mensagens %}
+          <p>{{ msg }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-    {% endblock %}
+    {% block conteudo %}{% endblock %}
+
+    <h6>Copyright © 2025</h6>
 
     <!-- Referência ao arquivo JavaScript -->
     <script src="{{ url_for('static', filename='js/script1.js') }}"> </script>
-
-    <!--Chama a função assim que a página carrega -->
-    <script src="{{ url_for('static', filename='js/script2.js') }}" 
-            onload="mostrarDataHora();">  </script>
-
-    <h6>Copyright₢ 2025</h6> <!--Ctrl+Alt+C-->
   </body>
 </html>

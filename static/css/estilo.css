@@ -1,94 +1,114 @@
-.imgquadrada{
-    width: 70px;
-    height: 70px;
-}
-
-.mensagens-flash {
-    color: #f39797;
-    background-color: #f6f6f8;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-button:hover {
-    background-color: #45a049;   /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilo para o parágrafo */
-p {
-    color: #333;               /* Cor do texto */
-    font-size: 18px;             /* Tamanho da fonte */
-    font-family: Arial, sans-serif; /* Fonte do texto */
-    line-height: 1.5;            /* Espaçamento entre linhas */
-    margin: 10px 0;              /* Margem acima e abaixo do parágrafo */
-}
-
-/*  Para alinhar os campos (rótulos e caixas de texto) em um formulário HTML */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 250px; /* Largura ajustável */
-    /*margin: auto;  Centraliza o formulário na página */
-    margin: 20px 0 0 50px; /* Margens no topo, direita, baixo, esquerda */
-    margin-left: 10px; /* Empurra para a direita */
-    margin-top: 10px; /* Empurra para baixo */
-}
-
-form label {
-    margin-bottom: 5px; /* Espaço entre o rótulo e o campo */
-}
-
-form input {
-    margin-bottom: 10px; /* Espaço entre os campos */
-    padding: 5px; /* Adiciona preenchimento */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px; /* Borda arredondada */
+/* === TEMA GERAL === */
+:root {
+    --roxo: #5e17eb;
+    --roxo-escuro: #2b0f4a;
+    --laranja: #ff8c42;
+    --cinza: #1c1c1c;
+    --branco: #f4f4f4;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 50px;
+    background-color: var(--cinza);
+    color: var(--branco);
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
+
+nav {
+    background: var(--roxo-escuro);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px #000;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+/* === CONTEÚDO CENTRAL === */
+.form-imagem {
+    text-align: center;
+    margin: 50px auto;
+    background-color: #2a2a2a;
+    border: 1px solid var(--roxo);
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+}
+
+.imagem-form {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 form {
-    max-width: 300px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+form label {
+    font-weight: bold;
+    color: var(--laranja);
+    text-align: left;
 }
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
+
+form input {
+    background-color: #1a1a1a;
+    color: var(--branco);
+    border: 1px solid var(--roxo);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--laranja);
+}
+
+button {
+    background-color: var(--roxo);
+    color: var(--branco);
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
-input[type="submit"]:hover {
-    background-color: #218838;
+
+button:hover {
+    background-color: var(--laranja);
+    color: var(--cinza);
 }
-#mensagem {
-    margin-top: 20px;
+
+/* === MENSAGENS === */
+.mensagens-flash {
+    background-color: #3a3a3a;
+    color: var(--laranja);
     padding: 10px;
     border-radius: 5px;
-    display: none;
+    margin: 15px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px var(--roxo);
 }
-.sucesso {
-    background-color: #d4edda;
-    color: #155724;
-}
-.erro {
-    background-color: #f8d7da;
-    color: #721c24;
+
+h6 {
+    text-align: center;
+    color: #888;
+    margin-top: 40px;
+    font-size: 0.8em;
 }
 
