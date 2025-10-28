@@ -7,12 +7,8 @@ Foi criado o script <code>AppFlask.py</code> em um ambiente virtual com Flask in
 
 - **Imagem utilizada <code>estudante.jpg</code>:** Criada por [pch.vector](https://www.freepik.com/author/pch-vector) no [Freepik](https://www.freepik.com).
 
-<h4>Principais diferenças entre as duas branches:</h4>
-<ul>
-  <li>
-</ul>
-
 <h3>2ª Parte</h3>
 <h4>Branches:</h4>
 <li>2ªparte</li>
-(as descrições específicas sobre a 2ª parte estarão lá, assim como as outras branches)
+<li>2ªparte</li>
+(as descrições específicas sobre a 2ª parte estão nessa branch)
